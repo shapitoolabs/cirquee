@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "include": ["src", "*.d.ts"],
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@storybookui": ["./.storybook/index.js"],
+    },
+
+    "resolveJsonModule": true,
+  },
+}
